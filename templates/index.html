@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div id="one">
+    <div class="container">
+    <h1>{% block title %}  URL Shortener {% endblock %}</h1>
+    <br>
+    <form method="post" ">
+    <div >
+        <label for="url">Enter the URL</label>
+        <br><br>
+        <input type="text" name="url" class="aform
+        placeholder="URL to shorten" alue="{{ request.form['url'] }}" autofocus></input>
+    </div>
+
+    <br>
+    <div >
+        <button class="button" type="submit">Submit</button>
+    </div>
+    </form>
+    
+
+    <br>
+    
+
+    {% if short_url %}
+    <hr>
+    <span>{{ short_url }}</span>
+    {% endif %}
+
+    </div>
+    </div>
+  
+{% endblock %}

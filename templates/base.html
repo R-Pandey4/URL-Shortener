@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mains.css') }}">
+
+    <title>{% block title %} {% endblock %}</title>
+  </head>
+  <body>
+    <div class="navbar">
+        <a href="{{ url_for('index')}}">Home</a>
+        <a  href="{{ url_for('stats')}}">Statistics</a>
+    </div>
+    <div>
+        {% for message in get_flashed_messages() %}
+            <div class="isa_error">{{ message }}</div>
+        {% endfor %}
+        {% block content %} {% endblock %}
+    </div>
+
+  </body>
+</html>

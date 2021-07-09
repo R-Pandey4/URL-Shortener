@@ -1,0 +1,108 @@
+.navbar
+{
+  background-color: #0841ed; 
+
+  overflow: hidden;
+}
+
+.navbar a
+{
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover 
+{
+    background-color: #ddd;
+    color: black;
+}
+  
+.navbar a.active 
+{
+    background-color: #04AA6D;
+    color: white;
+}
+
+#one
+  {
+    position: relative;
+
+  }
+
+  .container
+  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, 0%);
+     transform: translate(-50%, 0%);
+  }
+
+.isa_error {
+    margin: 10px 0px;
+    padding:12px;
+    color: #D8000C;
+    background-color: #FFD2D2;
+}
+
+.button {
+    background-color: #0841ed; 
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+
+  .aform
+  {
+    
+    width:1000px;
+    padding:20px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  .fl-table {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding: 8px;
+}
+
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+}
+
+.fl-table thead th {
+    color: #ffffff;
+    background: #4FC3A1;
+}
+
+
+.fl-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #324960;
+}
+
+.fl-table tr:nth-child(even) {
+    background: #F8F8F8;
+}
